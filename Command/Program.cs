@@ -1,9 +1,9 @@
-﻿Dogsitter owner = new();
-owner.SetOnStart(new SimpleCommand("Сидеть!"));
+﻿Dogsitter dogsitter = new();
+dogsitter.SetOnStart(new SimpleCommand("Сидеть!"));
 Сynologist cynologist = new();
-owner.SetOnFinish(new ComplexCommand(cynologist, "Рядом!"));
+dogsitter.SetOnFinish(new ComplexCommand(cynologist, "Рядом!"));
 
-owner.WalkWithDog();
+dogsitter.WalkWithDog();
 
 
 //Мы начинаем прогулку с собакой
